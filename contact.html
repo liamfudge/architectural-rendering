@@ -82,24 +82,26 @@
 					
 					<div class="col-lg-8">
 						<div class="contactmaxwid">
+						<form id="contact-form" method="post" action="contact-form-handler.php">
 							<div class="spacer"></div>
 							<h2>Send a message</h2>
 							<div class="spacer"></div>
 							<div class="inputsize">
-								<input class="input1" type="text" name="firstName" placeholder="First name">
+								<input class="input1" type="text" name="firstName" placeholder="First name" required>
 								<div class="gap"></div>
-								<input class="input1" type="text" name="surName" placeholder="Surname">
+								<input class="input1" type="text" name="surname" placeholder="Surname" required>
 							</div>
 							<div class="inputsize">
-								<input class="input2" type="text" name="email" placeholder="email">
+								<input class="input2" type="text" name="email" placeholder="email" required>
 							</div>
 							<div class="inputsize">
 							    <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message" name="message" required></textarea>
 							</div>
 							<div>
-								<button type="submit" class="submitbutton">Submit</button>
+								<button type="submit" class="submitbutton" value="SEND MESSAGE">Submit</button>
 							</div>
+						</form>
 						</div>
 					</div>
 					<div class="col-lg-4"></div>
